@@ -1,0 +1,23 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "proshop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nayeem01/mren_ecommerce.git"
+  },
+  "author": "nayeem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nayeem01/mren_ecommerce/issues"
+  },
+  "homepage": "https://github.com/nayeem01/mren_ecommerce#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1"
+  }
+}
