@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "proshop",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "client": "npm start --prefix frontend",
+    "server": "nodemon backend/server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,11 @@
   "homepage": "https://github.com/nayeem01/mren_ecommerce#readme",
   "dependencies": {
     "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
   }
 }
